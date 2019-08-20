@@ -26,8 +26,8 @@ using FormatSpecimens
         for record in stream
             @test hassequence(record) == TwoBit.hassequence(record) == true
             a = TwoBit.sequence(ReferenceSequence, record)
-            b = TwoBit.sequence(DNASequence, record)
-            @test TwoBit.sequence(ReferenceSequence, record) == TwoBit.sequence(DNASequence, record)
+            b = TwoBit.sequence(LongDNASeq, record)
+            @test TwoBit.sequence(ReferenceSequence, record) == TwoBit.sequence(LongDNASeq, record)
         end
         close(stream)
 
@@ -49,10 +49,10 @@ using FormatSpecimens
 
         return expected_entries == read_entries
     end
-    
+
     path = path_of_format("2bit")
     goodfiles = list_valid_specimens("2bit")
-    
+
     for specimen in goodfiles
         filepath = joinpath(path, filename(specimen))
         @test check_2bit_parse(filepath)

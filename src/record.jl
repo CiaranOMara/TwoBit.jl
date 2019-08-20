@@ -98,7 +98,7 @@ end
 
 Get the sequence of `record` as `S`.
 
-`S` can be either `BioSequences.ReferenceSequence` or `BioSequences.DNASequence`.
+`S` can be either `BioSequences.ReferenceSequence` or `BioSequences.LongDNASeq`.
 If `S` is omitted, the default type is `BioSequences.ReferenceSequence`.
 """
 function sequence(record::Record)
@@ -115,10 +115,10 @@ function sequence(::Type{BioSequences.ReferenceSequence}, record::Record)
     return BioSequences.ReferenceSequence(data, BioSequences.NMask(nmask), 1:record.dnasize)
 end
 
-function sequence(::Type{BioSequences.DNASequence}, record::Record)
+function sequence(::Type{BioSequences.LongDNASeq}, record::Record)
     checkfilled(record)
     data = decode_sequence(record.packeddna, record.dnasize, BioSequences.BitsPerSymbol{4}(), twobit2dnaseq_table)
-    seq = BioSequences.DNASequence(data, 1:record.dnasize, false)
+    seq = BioSequences.LongDNASeq(data, 1:record.dnasize, false)
     for i in 1:record.blockcount
         for j in record.blockstarts[i] .+ (1:record.blocksizes[i])
             seq[j] = BioSequences.DNA_N
