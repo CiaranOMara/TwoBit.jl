@@ -25,7 +25,8 @@ using BioSequences: @dna_str, ReferenceSequence, LongDNASeq
         @test eltype(stream) === TwoBit.Record
         # read from a stream
         for record in stream
-            @test hassequence(record) == TwoBit.hassequence(record) == true
+            # @test hassequence(record) == TwoBit.hassequence(record) == true
+            @test TwoBit.hassequence(record) == true
             a = TwoBit.sequence(ReferenceSequence, record)
             b = TwoBit.sequence(LongDNASeq, record)
             @test TwoBit.sequence(ReferenceSequence, record) == TwoBit.sequence(LongDNASeq, record)
