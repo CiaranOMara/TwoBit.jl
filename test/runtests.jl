@@ -1,6 +1,7 @@
 using Test
 using TwoBit
 using FormatSpecimens
+using BioSequences: @dna_str, ReferenceSequence, LongDNASeq
 
 @testset "TwoBit" begin
     buffer = IOBuffer()
