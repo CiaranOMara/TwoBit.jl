@@ -31,8 +31,7 @@ Press `]` to enter pkg mode again, and enter the following:
 add TwoBit
 ```
 
-If you are interested in the cutting edge of the development, please check out
-the master branch to try new features before release.
+If you are interested in the cutting edge of the development, please check out the develop branch to try new features before release.
 
 
 ## Testing
@@ -45,6 +44,8 @@ TwoBit is tested against Julia `1.X` on Linux, OS X, and Windows.
 [![Documentation](https://github.com/BioJulia/TwoBit.jl/workflows/Documentation/badge.svg?branch=master)](https://github.com/BioJulia/TwoBit.jl/actions?query=workflow%3ADocumentation+branch%3Amaster)
 [![](https://codecov.io/gh/BioJulia/TwoBit.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/BioJulia/TwoBit.jl)
 
+> This project follows the [semver](http://semver.org) pro forma and uses the [git-flow branching model](https://nvie.com/posts/a-successful-git-branching-model/ "original
+blog post").
 
 ## Contributing
 

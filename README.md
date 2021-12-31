@@ -6,6 +6,8 @@
 [![Latest documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://biojulia.github.io/TwoBit.jl/dev/)
 [![Pkg Status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
+> This project follows the [semver](http://semver.org) pro forma and uses the [git-flow branching model](https://nvie.com/posts/a-successful-git-branching-model/ "original
+blog post").
 
 ## Description
 
@@ -21,8 +23,7 @@ Press `]` to enter pkg mode again, and enter the following:
 add TwoBit
 ```
 
-If you are interested in the cutting edge of the development, please check out
-the master branch to try new features before release.
+If you are interested in the cutting edge of the development, please check out the develop branch to try new features before release.
 
 
 ## Testing

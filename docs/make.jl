@@ -5,6 +5,7 @@ DocMeta.setdocmeta!(TwoBit, :DocTestSetup, :(using TwoBit); recursive=true)
 makedocs(
     format = Documenter.HTML(
         prettyurls = haskey(ENV, "GITHUB_ACTIONS"),
+        edit_link = "develop"
     ),
     modules = [TwoBit],
     sitename = "TwoBit.jl",
@@ -23,5 +24,6 @@ makedocs(
 
 deploydocs(
     repo = "github.com/BioJulia/TwoBit.jl.git",
+    devbranch = "develop",
     push_preview = true
 )
