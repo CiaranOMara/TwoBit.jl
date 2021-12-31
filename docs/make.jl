@@ -1,15 +1,15 @@
 using Documenter, TwoBit
 
-Documenter.post_status(; type = "pending", repo = "github.com/BioJulia/TwoBit.jl.git")
+DocMeta.setdocmeta!(TwoBit, :DocTestSetup, :(using TwoBit); recursive=true)
 
 makedocs(
     format = Documenter.HTML(
-        prettyurls = haskey(ENV, "GITHUB_ACTIONS")
+        prettyurls = haskey(ENV, "GITHUB_ACTIONS"),
     ),
     modules = [TwoBit],
     sitename = "TwoBit.jl",
-    doctest = false,
-    strict = false,
+    doctest = true,
+    strict = true,
     pages = [
         "Home" => "index.md",
         "Manual" => [

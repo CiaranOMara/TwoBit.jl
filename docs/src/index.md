@@ -1,7 +1,7 @@
 # TwoBit
 
 [![Latest Release](https://img.shields.io/github/release/BioJulia/TwoBit.jl.svg)](https://github.com/BioJulia/TwoBit.jl/releases/latest)
-[![MIT license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/BioJulia/TwoBit.jl/blob/master/LICENSE) 
+[![MIT license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/BioJulia/TwoBit.jl/blob/master/LICENSE)
 [![Stable documentation](https://img.shields.io/badge/docs-stable-blue.svg)](https://biojulia.github.io/TwoBit.jl/stable)
 [![Latest documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://biojulia.github.io/TwoBit.jl/dev/)
 [![Pkg Status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
@@ -42,8 +42,8 @@ TwoBit is tested against Julia `1.X` on Linux, OS X, and Windows.
 
 **Latest build status:**
 
-[![](https://travis-ci.com/BioJulia/TwoBit.jl.svg?branch=master)](https://travis-ci.com/BioJulia/TwoBit.jl)
-[![](https://ci.appveyor.com/api/projects/status/jcluuycn0763hnea/branch/master?svg=true)](https://ci.appveyor.com/project/BenJWard/twobit-jl/branch/master)
+[![Unit tests](https://github.com/BioJulia/TwoBit.jl/workflows/Unit%20tests/badge.svg?branch=master)](https://github.com/BioJulia/TwoBit.jl/actions?query=workflow%3A%22Unit+tests%22+branch%3Amaster)
+[![Documentation](https://github.com/BioJulia/TwoBit.jl/workflows/Documentation/badge.svg?branch=master)](https://github.com/BioJulia/TwoBit.jl/actions?query=workflow%3ADocumentation+branch%3Amaster)
 [![](https://codecov.io/gh/BioJulia/TwoBit.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/BioJulia/TwoBit.jl)
 
 
